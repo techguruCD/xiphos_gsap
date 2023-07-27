@@ -121,6 +121,17 @@ body {
     z-index: 1;
 }
 
+.earth-background {
+    background-image: url(../assets/earth.png);
+    position: absolute;
+    border: 0;
+    left: -108px;
+    top: -534px;
+    bottom: 0;
+    width: 100vw;
+    background-size: cover;
+}
+
 .earth-section {
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,10 +153,10 @@ body {
 }
 
 .earth-slider-pos-container .guide-box {
-    width: 10px;
-    height: 20px;
+    width: 5px;
+    height: 15px;
     background-color: white;
-    left: calc(50% - 5px);
+    left: calc(50% - 2.5px);
     position: absolute;
     top: 0;
 }
@@ -154,6 +165,8 @@ body {
     border-radius: 5px;
     opacity: 0.699999988079071;
     background: #E6EAF3;
+    position: relative!important;
+    z-index: 100;
 }
 
 .chip-introduction-text {
@@ -168,6 +181,7 @@ body {
 
 .chip-horizontal-slider {
     height: 100vh;
+    overflow: unset!important;
 }
 
 .chip-horizontal-slider .slider-container{
@@ -461,7 +475,7 @@ body {
     }
 
     .earth-section {
-        background-image: url(../assets/earth.png);
+        /* background-image: url(../assets/earth.png); */
         padding: 0px 20px;
         top: 233px;
         background-size: 100%, auto;
