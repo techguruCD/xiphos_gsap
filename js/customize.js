@@ -45,7 +45,6 @@ ScrollTrigger.matchMedia({
       xPercent: -100 * (sections.length - 1),
       // ease: "none",
       scrollTrigger: {
-        // trigger: ".earth-section",
         trigger: ".chip-horizontal-slider",
         pin: true,
         scrub: 1,
@@ -54,10 +53,10 @@ ScrollTrigger.matchMedia({
           const guideLineHeight = (document.documentElement.clientHeight - document.querySelector(".chip-horizontal-slider .slider-container").offsetHeight) / 2;
           document.querySelector(".earth-slider-pos-container.top").style.height = guideLineHeight + "px";
           document.querySelector(".earth-slider-pos-container.down").style.height = guideLineHeight + "px";
-          return "-" + (document.documentElement.clientHeight - document.querySelector(".chip-horizontal-slider").offsetHeight) / 2;
+          // return "-" + (document.documentElement.clientHeight - document.querySelector(".chip-horizontal-slider").offsetHeight) / 2;
+          return "0";
         },
         end: () => "+=" + document.querySelector(".chip-horizontal-slider").offsetWidth * (sections.length - 1)
-        // end: "+=10000"
       }
     });
 
