@@ -136,7 +136,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    position: absolute;
+    margin-top: -145px;
+    /* position: absolute; */
 }
 
 .earth-slider-pos-container {
